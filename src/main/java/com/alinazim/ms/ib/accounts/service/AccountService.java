@@ -28,6 +28,7 @@ public class AccountService {
         );
     }
 
+
     public void updateAccount(String accountNumber, Double balance) {
         var accountEntity = accountRepository.findByAccountNumber(accountNumber)
                 .orElseThrow(
